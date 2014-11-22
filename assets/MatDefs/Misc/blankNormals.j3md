@@ -1,0 +1,19 @@
+MaterialDef blankness {
+    MaterialParameters {
+        Float planet_radius
+        Float noise_scale
+    }
+    Technique {
+        VertexShader GLSL100:   MatDefs/Misc/blankNormals.vert
+        FragmentShader GLSL100: MatDefs/Misc/blankNormals.frag
+
+        WorldParameters {
+            WorldViewProjectionMatrix
+            Vertex
+        }
+
+        Defines {
+           
+        }
+    }
+}
